@@ -1,8 +1,30 @@
 use google_youtube3::YouTube;
+use serde::{Deserialize, Serialize};
+use tokio::fs;
+use tokio::io::AsyncWriteExt;
+use tracing::instrument;
+use tracing::{info, Level};
+use tracing_subscriber::FmtSubscriber;
 use yup_oauth2::{InstalledFlowAuthenticator, InstalledFlowReturnMethod};
 
 #[tokio::main]
 async fn main() {
+    // a builder for `FmtSubscriber`.
+    let subscriber = FmtSubscriber::builder()
+        // all spans/events with a level higher than TRACE (e.g, debug, info, warn, etc.)
+        // will be written to stdout.
+        .with_max_level(Level::INFO)
+        // completes the builder.
+        .finish();
+
+    tracing::subscriber::set_global_default(subscriber).expect("setting default subscriber failed");
+
+    let hub = build_yt_api().await;
+
+    update_recipe_playlists(&hub).await;
+}
+
+async fn build_yt_api() -> YouTube {
     let secret = yup_oauth2::read_application_secret("clientsecret.json")
         .await
         .expect("clientsecret.json");
@@ -14,32 +36,49 @@ async fn main() {
             .await
             .unwrap();
 
-    let scopes = &["https://www.googleapis.com/auth/youtube.readonly"];
+    let _scopes = &["https://www.googleapis.com/auth/youtube.readonly"];
 
     // match auth.token(scopes).await {
     //     Ok(token) => println!("The token is {:?}", token),
     //     Err(e) => println!("error: {:?}", e),
     // }
 
-    let mut hub = YouTube::new(
+    YouTube::new(
         hyper::Client::builder().build(hyper_rustls::HttpsConnector::with_native_roots()),
         auth,
-    );
-
-    let playlists = get_all_playlists(&hub).await;
-
-    let recipe_playlists: Vec<_> = playlists.into_iter().filter(|pl| pl.title.starts_with("recipe")).collect();
-
-    println!("{:?}", recipe_playlists)
+    )
 }
 
+async fn update_recipe_playlists(hub: &YouTube) {
+    let playlists = get_all_playlists(&hub).await;
+
+    let mut recipe_playlists: Vec<_> = playlists
+        .into_iter()
+        .filter(|pl| pl.title.to_ascii_lowercase().contains("recipe"))
+        .collect();
+    recipe_playlists.sort_by(|a, b| a.id.cmp(&b.id));
+
+    let mut recipes_file = fs::File::create("recipes.json").await.unwrap();
+
+    recipes_file
+        .write_all(
+            serde_json::to_string_pretty(&recipe_playlists)
+                .unwrap()
+                .as_bytes(),
+        )
+        .await
+        .unwrap();
+}
+
+// https://developers.google.com/youtube/v3/docs/playlists/list
+#[instrument(skip(hub))]
 async fn get_all_playlists(hub: &YouTube) -> Vec<Playlist> {
     let parts = vec!["snippet".to_string(), "contentDetails".to_string()];
     let mut playlists = Vec::new();
     let mut first = true;
     let mut next_page_token: Option<String> = None;
 
-    // https://developers.google.com/youtube/v3/docs/playlists/list
+    info!("downloading playlists");
 
     while first || next_page_token.is_some() {
         first = false;
@@ -69,11 +108,45 @@ async fn get_all_playlists(hub: &YouTube) -> Vec<Playlist> {
     playlists
 }
 
-#[derive(Debug, Clone)]
+// https://developers.google.com/youtube/v3/docs/playlistItems/list
+#[instrument(skip(hub))]
+async fn get_playlist_items(hub: &YouTube, id: &str) {
+    let mut first = true;
+    let mut next_page_token: Option<String> = None;
+    let parts = vec!["snippet".to_string(), "contentDetails".to_string(), "id".to_string()];
+
+    while first || next_page_token.is_some() {
+        let mut call = hub.playlist_items().list(&parts).max_results(50).add_id(id);
+
+        if let Some(page_token) = &next_page_token {
+            call = call.page_token(page_token);
+        }
+
+        let (_, items_resp) = call.doit().await.unwrap();
+        next_page_token = items_resp.next_page_token.clone();
+    }
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, Eq, Ord, PartialEq, PartialOrd)]
 pub struct Playlist {
+    id: String,
     title: String,
     published_at: String,
     item_count: u32,
-    id: String,
     etag: String,
 }
+
+pub struct Video {
+    id: String,
+    title: String,
+    video_published_at: String,
+    start_at: String,
+    end_at: String,
+    video_id: String,
+    note: String,
+    published_at: String,
+    description: String,
+
+}
+
+pub struct VideoThumbnails {}
