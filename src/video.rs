@@ -1,11 +1,10 @@
-
 use google_youtube3::YouTube;
 use std::path::Path;
 use tokio::fs;
-use tokio::io::{AsyncWriteExt};
-use tracing::{Level, event, instrument};
+use tokio::io::AsyncWriteExt;
+use tracing::{event, instrument, Level};
 
-use crate::{Thumbnails, Video, VIDEOS_DIR, WHITESPACE_RE};
+use crate::{Thumbnail, Thumbnails, Video, THUMBNAILS_DIR, VIDEOS_DIR, WHITESPACE_RE};
 
 // https://developers.google.com/youtube/v3/docs/playlistItems/list
 #[instrument(skip(hub))]
@@ -85,12 +84,12 @@ fn is_video_available(item: &google_youtube3::api::PlaylistItem) -> bool {
 }
 
 #[instrument(skip(hub))]
-async fn update_playlist_items(hub: &YouTube, id: &str) {
+async fn update_playlist_items(hub: &YouTube, id: &str) -> Vec<Video> {
     let videos = get_playlist_items(hub, id).await;
     let dir_path = Path::new(VIDEOS_DIR);
     fs::create_dir_all(dir_path).await.unwrap();
 
-    for video in videos {
+    for video in &videos {
         let mut video_file_path = dir_path.to_owned();
         video_file_path.push(format!(
             "{}.json",
@@ -107,14 +106,67 @@ async fn update_playlist_items(hub: &YouTube, id: &str) {
             .write_all(serde_json::to_string_pretty(&video).unwrap().as_bytes())
             .await
             .unwrap();
+
+        download_video_thumbnails(&video).await;
+    }
+    videos
+}
+
+#[instrument]
+async fn download_video_thumbnails(video: &Video) {
+    let thumbnails_dir = {
+        let mut dir = Path::new(THUMBNAILS_DIR).to_owned();
+        dir.push(&video.video_id);
+        dir
+    };
+    fs::create_dir_all(&thumbnails_dir).await.unwrap();
+
+    download_thumbnail(&thumbnails_dir, &video.thumbnails.default).await;
+    download_thumbnail(&thumbnails_dir, &video.thumbnails.high).await;
+    download_thumbnail(&thumbnails_dir, &video.thumbnails.medium).await;
+    if let Some(thumbnail) = &video.thumbnails.standard {
+        download_thumbnail(&thumbnails_dir, thumbnail).await;
+    }
+    if let Some(thumbnail) = &video.thumbnails.maxres {
+        download_thumbnail(&thumbnails_dir, thumbnail).await;
     }
 }
 
+#[instrument]
+async fn download_thumbnail(dest_dir: &Path, thumbnail: &Thumbnail) {
+    let (_, filename) = thumbnail.url.rsplit_once("/").unwrap();
+    let dest_file = {
+        let mut file = dest_dir.to_path_buf();
+        file.push(filename);
+        file
+    };
+
+    let image = reqwest::get(&thumbnail.url)
+        .await
+        .unwrap()
+        .bytes()
+        .await
+        .unwrap();
+
+    let mut thumbnail_file = fs::File::create(&dest_file).await.unwrap();
+    thumbnail_file.write_all(&image).await.unwrap();
+
+    event!(Level::DEBUG, ?thumbnail.url, file = ?dest_file, "Downloaded thumbnail");
+}
+
 #[instrument(skip(hub))]
-pub async fn update_all_playlists_items(hub: &YouTube, playlist_ids: Vec<String>) {
+pub async fn update_all_playlists_items(hub: &YouTube, playlist_ids: Vec<String>) -> Vec<Video> {
     event!(Level::INFO, ?playlist_ids, "updating playlists");
+    let mut videos = Vec::new();
 
     for id in playlist_ids {
-        update_playlist_items(hub, &id).await;
+        let playlist_videos = update_playlist_items(hub, &id).await;
+        videos.extend(playlist_videos);
     }
+    videos
+}
+
+#[instrument]
+pub async fn read_all_videos() -> Vec<Video> {
+    todo!()
 }

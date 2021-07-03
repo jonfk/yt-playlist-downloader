@@ -13,6 +13,7 @@ use yup_oauth2::{InstalledFlowAuthenticator, InstalledFlowReturnMethod};
 
 static RECIPE_PLAYLISTS_FILE: &str = "recipes_playlists.json";
 static VIDEOS_DIR: &str = "videos";
+static THUMBNAILS_DIR: &str = "videos/thumbnails";
 
 lazy_static! {
     static ref WHITESPACE_RE: Regex = Regex::new(r"\s").unwrap();
@@ -25,7 +26,16 @@ mod video;
 #[clap(version = "1.0", author = "Jonathan Fok kan <jfokkan@gmail.com>")]
 struct CliOpts {
     #[clap(long)]
-    skip_update_playlists: bool,
+    update_playlists: bool,
+
+    #[clap(long)]
+    update_videos: bool,
+
+    #[clap(long)]
+    check_video: bool,
+
+    #[clap(long)]
+    all: bool,
 }
 
 #[tokio::main]
@@ -43,13 +53,23 @@ async fn main() {
 
     let hub = build_yt_api().await;
 
-    let playlists = if cli_opts.skip_update_playlists {
-        playlist::read_recipe_playlists().await
-    } else {
+    let playlists = if cli_opts.all || cli_opts.update_playlists {
         playlist::update_recipe_playlists(&hub).await
+    } else {
+        playlist::read_recipe_playlists().await
     };
 
-    video::update_all_playlists_items(&hub, playlists.into_iter().map(|p| p.id).collect()).await;
+    let videos = if cli_opts.all || cli_opts.update_videos {
+    video::update_all_playlists_items(&hub, playlists.into_iter().map(|p| p.id).collect()).await
+    } else {
+        video::read_all_videos().await
+    };
+
+    if cli_opts.all || cli_opts.check_video {
+        println!("TODO check videos");
+    } else {
+        // do nothing
+    }
 
     info!("Update Completed");
 }
