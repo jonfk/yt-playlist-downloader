@@ -1,0 +1,36 @@
+{
+  "title": "The Cuban Sandwich - How to Make a Cubano Sandwich",
+  "video_published_at": "2017-01-21T01:35:20Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "y1kpQv_m0b0",
+  "published_at": "2017-01-24T18:46:43Z",
+  "description": "Learn how to make a Cuban Sandwich! Go to http://foodwishes.blogspot.com/2017/01/the-cuban-sandwich-hold-mojo.html for the ingredient amounts, more information, and many, many more video recipes! I hope you enjoy this easy Cuban Sandwich recipe.",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/y1kpQv_m0b0/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/y1kpQv_m0b0/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/y1kpQv_m0b0/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/y1kpQv_m0b0/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/y1kpQv_m0b0/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

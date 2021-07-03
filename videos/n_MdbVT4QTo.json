@@ -1,0 +1,36 @@
+{
+  "title": "How to cook Beef Salpicao",
+  "video_published_at": "2015-08-02T04:00:00Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "n_MdbVT4QTo",
+  "published_at": "2018-06-14T03:14:23Z",
+  "description": "The secret really is the large chunk of butter thrown in at the end.  It gives an added savoriness to it.\nFor more great recipes and kitchen tips visit us at:\nhttp://pinoycookery.com\nhttp://facebook.com/pinoycookery\nhttp://youtube.com/pinoycookery",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/n_MdbVT4QTo/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/n_MdbVT4QTo/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/n_MdbVT4QTo/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/n_MdbVT4QTo/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/n_MdbVT4QTo/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

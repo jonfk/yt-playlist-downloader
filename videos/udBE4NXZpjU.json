@@ -1,0 +1,36 @@
+{
+  "title": "How to Make French Onion Soup",
+  "video_published_at": "2018-04-03T16:09:46Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "udBE4NXZpjU",
+  "published_at": "2018-04-18T03:36:41Z",
+  "description": "Soup season is still in full swing. Here's how not to make it... and then, how to do it the right way.\n\nFULL STORY: https://www.seriouseats.com/2015/01/how-to-make-the-best-french-onion-soup-caramelization.html",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/udBE4NXZpjU/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/udBE4NXZpjU/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/udBE4NXZpjU/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/udBE4NXZpjU/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/udBE4NXZpjU/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

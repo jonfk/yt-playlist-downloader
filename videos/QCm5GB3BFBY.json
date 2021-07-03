@@ -1,0 +1,36 @@
+{
+  "title": "How to Make Katsudon (Japanese Chicken Cutlet and Egg Rice Bowl)",
+  "video_published_at": "2017-04-18T22:24:14Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "QCm5GB3BFBY",
+  "published_at": "2017-10-11T21:57:44Z",
+  "description": "Get the full written recipe here: http://www.seriouseats.com/recipes/2017/04/katsudon-japanese-leftover-cutlet-rice-egg-bowl-recipe.html",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/QCm5GB3BFBY/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/QCm5GB3BFBY/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/QCm5GB3BFBY/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/QCm5GB3BFBY/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/QCm5GB3BFBY/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

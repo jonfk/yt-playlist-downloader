@@ -1,0 +1,36 @@
+{
+  "title": "日日煮烹飪短片 - 八寶雞 Eight Treasure Chicken",
+  "video_published_at": "2014-04-14T09:07:33Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "tBXgOrD-EUY",
+  "published_at": "2019-08-27T04:46:18Z",
+  "description": "查看完整食譜：\nhttp://www.daydaycook.com/recipe/2/details/20511/Eight-Treasure-Chicken.html\n\nFor recipe in English: \nhttp://www.daydaycook.com/recipe/1/details/20511/Eight-Treasure-Chicken.html\n\n\nVisit our website: http://www.daydaycook.com\n\nFollow us on Facebook: http://www.facebook.com/daydaycooker",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/tBXgOrD-EUY/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/tBXgOrD-EUY/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/tBXgOrD-EUY/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/tBXgOrD-EUY/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/tBXgOrD-EUY/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

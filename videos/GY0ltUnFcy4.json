@@ -1,0 +1,36 @@
+{
+  "title": "How to cook Michelin-Starred Chips",
+  "video_published_at": "2015-01-29T01:32:59Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "GY0ltUnFcy4",
+  "published_at": "2017-02-16T00:41:25Z",
+  "description": "Tip 1: Cheap the right type of potato - it's got to be rooster or Maris potato\nTip 2: Cook 3 times; the first 2 times are to erase moisture; each time cook 10-20 minutes\nTip 3: Steam dry for 15 minutes\nTip 4: Double fry in duck fat: fry once at 140ºc; then rest for 10 minutes; then fry again at 180ºc",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/GY0ltUnFcy4/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/GY0ltUnFcy4/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/GY0ltUnFcy4/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/GY0ltUnFcy4/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/GY0ltUnFcy4/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

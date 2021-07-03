@@ -1,0 +1,36 @@
+{
+  "title": "Spicy Guacamole | DJ BBQ",
+  "video_published_at": "2014-04-03T18:30:01Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "EfNSfRMtcoA",
+  "published_at": "2014-04-06T20:26:49Z",
+  "description": "If it's not spicy it's not dicey, and if it's not dicey it's not my spicy homemade guac! Super simple for super cool people! Make it now!\n\nGet a free copy of my book by subscribing to Jamie Magazine here:\nhttps://jamiemagazine.co.uk/ using the promo ftdj",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/EfNSfRMtcoA/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/EfNSfRMtcoA/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/EfNSfRMtcoA/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/EfNSfRMtcoA/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/EfNSfRMtcoA/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

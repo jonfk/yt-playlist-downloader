@@ -1,0 +1,36 @@
+{
+  "title": "촥촥! 접어서 만드는 스팸 밥샌드위치!! 초간단 스팸김밥.",
+  "video_published_at": "2021-02-04T12:30:01Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "CWdneaQNR70",
+  "published_at": "2021-02-24T04:03:01Z",
+  "description": "눕방 샌드위치와 대환장 파티. 요즘 난리 난 틀 없이 접어서 만드는 김밥으로 김밥 샌드위치를 만들었습니다. 만들기도 쉽고 먹기도 좋은 김밥 샌드위치. 주말 아침이나 간단한 간식으로 드셔보세요.\n\n재료 : \n1. 스팸\n2. 김\n3. 계란\n4. 밥\n5. 치즈\n\n감사합니다",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/CWdneaQNR70/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/CWdneaQNR70/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/CWdneaQNR70/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/CWdneaQNR70/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/CWdneaQNR70/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

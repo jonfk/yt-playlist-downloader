@@ -1,0 +1,36 @@
+{
+  "title": "Make Great Coffee with a Moka Pot",
+  "video_published_at": "2015-12-04T16:24:54Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "rpyBYuu-wJI",
+  "published_at": "2020-08-25T03:03:00Z",
+  "description": "Learn to make amazing, espresso-style coffee in a moka pot. Bonus: we'll show you a latte hack too. https://chfstps.co/3dHyCTf\n\nSign up at chefsteps.com and be the first to learn about new recipes, special offers, and goings-on around the kitchen: http://chfstps.co/1paXXVd",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/rpyBYuu-wJI/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/rpyBYuu-wJI/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/rpyBYuu-wJI/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/rpyBYuu-wJI/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/rpyBYuu-wJI/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

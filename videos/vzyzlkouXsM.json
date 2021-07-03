@@ -1,0 +1,36 @@
+{
+  "title": "Patatas Bravas -- Crispy Potatoes with Spicy Garlic & Chili Aioli",
+  "video_published_at": "2012-11-30T23:29:21Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "vzyzlkouXsM",
+  "published_at": "2017-12-12T18:43:20Z",
+  "description": "Learn how to make a Patatas Bravas recipe! Go to http://foodwishes.blogspot.com/2012/11/patatas-bravas-fierce-up-your-fries.html for the ingredient amounts, more information, and over 760 more video recipes! I hope you enjoy this easy Patatas Bravas recipe!",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/vzyzlkouXsM/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/vzyzlkouXsM/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/vzyzlkouXsM/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/vzyzlkouXsM/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/vzyzlkouXsM/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

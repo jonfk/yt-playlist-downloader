@@ -1,0 +1,36 @@
+{
+  "title": "Beat the Heat With Cold Somen (Thin Japanese Dipping Noodles) | Kenji's Cooking Show",
+  "video_published_at": "2021-06-29T14:02:19Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "1oIxX0YfEFE",
+  "published_at": "2021-07-01T04:20:06Z",
+  "description": "Donate to No Kid Hungry here: https://p2p.onecause.com/livestreamfornokidhungry/kenji-alt-lopez\n\n\nFor the dipping sauce I combine:\n- 80% dashi (you can use hondashi or make it yourself - see my video on miso soup for directions: https://youtu.be/U_Y9BUP3VVI)\n- 10-15% mirin\n- 5-10% shoyu\n\nAs usual, Nami from Just One Cookbook has an excellent article and recipe with more details on this dish if you are interested: https://www.justonecookbook.com/somen/",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/1oIxX0YfEFE/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/1oIxX0YfEFE/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/1oIxX0YfEFE/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/1oIxX0YfEFE/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/1oIxX0YfEFE/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

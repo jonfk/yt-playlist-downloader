@@ -1,0 +1,36 @@
+{
+  "title": "Japchae (Glass noodles stir-fried with vegetables: 잡채)",
+  "video_published_at": "2014-11-05T02:45:52Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "i1djfV9uigc",
+  "published_at": "2016-11-18T20:57:20Z",
+  "description": "Full recipe: http://www.maangchi.com/recipe/japchae\nJapchae, sweet potato starch noodles stir fried with vegetables and meat, is one of Korea’s best-loved dishes, and one of the most popular on my website as well.\n\nStir frying each ingredient separately seems like a lot of labor, but each one requires a different cooking time and a bit of care, and keeping the color and freshness of each ingredient intact makes for a stunning final presentation.",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/i1djfV9uigc/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/i1djfV9uigc/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/i1djfV9uigc/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/i1djfV9uigc/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/i1djfV9uigc/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

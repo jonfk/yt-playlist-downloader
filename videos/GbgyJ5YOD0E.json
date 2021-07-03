@@ -1,0 +1,36 @@
+{
+  "title": "Brown Chicken Risotto",
+  "video_published_at": "2019-09-26T18:00:02Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "GbgyJ5YOD0E",
+  "published_at": "2020-09-14T03:52:11Z",
+  "description": "An easy risotto with the intense flavor of a roast chicken dinner. Thanks to Squarespace for sponsoring this video! Go to Squarespace.com for a free trial, and when you’re ready to launch, go to http://squarespace.com/ragusea and add code “RAGUSEA\" at checkout to save 10% off your first purchase of a website or domain.\n\n***RECIPE***\n\nBrown Chicken Risotto (serves two, multiply as needed)\n\nolive oil\n1 boneless chicken thigh\n2 small shallots\n2 small carrots\n1/2 cup risotto rice\nwhite wine (about 1/2 cup)\nchicken stock (2-3 cups)\n1 bay leaf\ndried sage\ndried thyme\nsalt\npepper\n2-3 cloves of garlic\n1/2 cup frozen peas\nbutter\nparmesan or pecorino cheese\n\nGet a reasonably wide pan on medium-high heat. Coat the bottom with olive oil, and cook the chicken thigh until brown on both sides. While the chicken is cooking, cut the shallots and carrots into small pieces. When the chicken is brown, remove it, and dump in the carrots and shallots. Cook the vegetables until at least some of them are brown and you're worried the pan is going to scorch. Put in the rice, stir, and let sit for a minute until the bottom layer of rice is brown and smells nutty. \n\nDeglaze with enough white wine to cover the rice. When the wine has reduced down substantially, pour in enough stock to generously cover the rice. Add the bay leaf, a pinch of sage and thyme, and pepper. Cut the chicken thigh into small pieces and add those back to the pan. Simmer until the stock has been mostly absorbed, during which time you can peel and chop the garlic.\n\nContinue to add small amounts of stock and stir until the rice tastes like it's almost done but is still a little crunchy. Turn the heat off, melt in butter and cheese to taste, mix in the peas, garlic and another splash of white wine. Test for seasoning, then eat.",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/GbgyJ5YOD0E/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/GbgyJ5YOD0E/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/GbgyJ5YOD0E/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/GbgyJ5YOD0E/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/GbgyJ5YOD0E/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "BBQ Beef Brisket With Crunchy Coleslaw and Sweet Potato Wedges Recipe",
+  "video_published_at": "2013-12-21T17:23:48Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "5duTLQ7JbB4",
+  "published_at": "2017-03-05T02:21:42Z",
+  "description": "",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/5duTLQ7JbB4/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/5duTLQ7JbB4/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/5duTLQ7JbB4/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/5duTLQ7JbB4/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": null
+  }
+}

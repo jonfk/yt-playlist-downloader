@@ -1,0 +1,36 @@
+{
+  "title": "Omelet Kimbap - Korean street food",
+  "video_published_at": "2019-06-06T12:00:05Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "PMr84XC2RdI",
+  "published_at": "2019-06-26T03:27:23Z",
+  "description": "Soon Films is a food channel that introduces delicious street food.\n\nSo far, Introducing delicious street food from Korea, Japan, Taiwan and Southeast Asia.\nI am committed to becoming a global channel to introduce diverse street foods from around the world.\n\nThank you for your interest!\nPlease watch the growth of Soon Films and join us.\n\nThank you.\n\nChannel URL : www.youtube.com/c/soonfilms\nInquiry mail : soonfilms@naver.com\n\n** Location and pricing information **\nRodeo Street, Guwol-dong, Incheon\nGoogle maps - https://goo.gl/maps/tgAU25JbuhUVNfK16\nOmelet Kimbap 3000 won (2.5 USD)",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/PMr84XC2RdI/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/PMr84XC2RdI/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/PMr84XC2RdI/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/PMr84XC2RdI/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/PMr84XC2RdI/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

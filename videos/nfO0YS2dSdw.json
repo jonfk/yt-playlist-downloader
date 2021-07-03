@@ -1,0 +1,36 @@
+{
+  "title": "Bay Scallop Chowder Recipe - Creamy Scallop and Bacon Soup",
+  "video_published_at": "2014-10-18T02:52:53Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "nfO0YS2dSdw",
+  "published_at": "2017-06-24T05:59:56Z",
+  "description": "Learn how to make a Bay Scallop Chowder Recipe! Go to http://foodwishes.blogspot.com/2014/10/bay-scallop-chowder-uglicious.html for more information, and many, many more recipe videos. I hope you enjoy this easy Bay Scallop Chowder recipe!",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/nfO0YS2dSdw/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/nfO0YS2dSdw/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/nfO0YS2dSdw/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/nfO0YS2dSdw/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/nfO0YS2dSdw/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

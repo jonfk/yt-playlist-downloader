@@ -1,0 +1,36 @@
+{
+  "title": "How to make gimbap (aka kimbap: 김밥)",
+  "video_published_at": "2014-04-11T22:09:19Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "Y-Y9CXGRJPU",
+  "published_at": "2014-11-16T05:01:14Z",
+  "description": "Full recipe: http://www.maangchi.com/recipe/kimbap\n\nGimbap is a delicious Korean seaweed and rice roll that's perfect for picnics and potlucks. It's sometimes called \"Korean sushi\", but the rice isn't prepared with vinegar like Japanese sushi, it's made with sesame oil.",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/Y-Y9CXGRJPU/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/Y-Y9CXGRJPU/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/Y-Y9CXGRJPU/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/Y-Y9CXGRJPU/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/Y-Y9CXGRJPU/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

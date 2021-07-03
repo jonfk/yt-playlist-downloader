@@ -1,0 +1,36 @@
+{
+  "title": "Kenji's Cooking Show | Everything Bagel Strata",
+  "video_published_at": "2020-05-09T13:00:16Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "MtgEZ2Rkm8A",
+  "published_at": "2020-05-14T04:14:24Z",
+  "description": "I had some leftover bagels from Wise Sons (excellent NY-style bagels in San Francisco!), and as we all know, great bagels are TERRIBLE when even a day old. So I soaked them in a cream cheese custard and baked them into strata. I swear I don't eat carbs and cheese all the time.",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/MtgEZ2Rkm8A/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/MtgEZ2Rkm8A/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/MtgEZ2Rkm8A/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/MtgEZ2Rkm8A/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/MtgEZ2Rkm8A/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

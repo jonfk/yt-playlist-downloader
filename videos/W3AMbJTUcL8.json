@@ -1,0 +1,36 @@
+{
+  "title": "MOZZU-OMURETSU, DOZO (Ep. 3 THE STRING CHEESE INCIDENT)",
+  "video_published_at": "2016-12-01T11:45:26Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "W3AMbJTUcL8",
+  "published_at": "2017-06-16T03:26:42Z",
+  "description": "This is my new friend mozzu-omuretsu. A mozzarella stick-stuffed French omelette favored with soy sauce and okonomiyaki sauce. Bon Appe-tadakimasu!\n\nMusic: Bensound.com",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/W3AMbJTUcL8/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/W3AMbJTUcL8/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/W3AMbJTUcL8/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/W3AMbJTUcL8/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/W3AMbJTUcL8/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title": "Three Fantastic Japanese Salad Dressings | Recipe | The Zen Kitchen",
+  "video_published_at": "2016-11-29T01:17:38Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "9QJxo5xOx6o",
+  "published_at": "2020-05-18T04:35:52Z",
+  "description": "How to make three different classic Japanese salad dressings: Wa-fu dressing, Sesame dressing, and Ponzu. Mix and match these dressings with any of the salads in The Zen Kitchen!",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/9QJxo5xOx6o/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/9QJxo5xOx6o/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/9QJxo5xOx6o/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/9QJxo5xOx6o/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/9QJxo5xOx6o/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title": "Spicy garlic fried chicken (Kkanpunggi: 깐풍기)",
+  "video_published_at": "2016-02-05T00:15:50Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "VjneaJ0hmgs",
+  "published_at": "2017-06-19T04:46:10Z",
+  "description": "Kkanpunggi is spicy garlic fried chicken stir-fried with vegetables and a sweet and sour sauce. It’s a Korean Chinese dish, originating in China but modified to suit Korean tastes, with Korean ingredients.\nFull recipe: http://www.maangchi.com/recipe/kkanpunggi",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/VjneaJ0hmgs/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/VjneaJ0hmgs/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/VjneaJ0hmgs/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/VjneaJ0hmgs/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/VjneaJ0hmgs/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

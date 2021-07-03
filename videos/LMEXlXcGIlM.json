@@ -1,0 +1,28 @@
+{
+  "title": "Gordon Ramsay  Scallops on Cauliflower Puree",
+  "video_published_at": "2011-08-11T05:13:16Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "LMEXlXcGIlM",
+  "published_at": "2018-05-10T03:33:02Z",
+  "description": "Gordon Ramsay makes scallops - great variation of Raymond Blanc`s Scallops with Caulie`s.\r\nThis video is posted for educational and training purposes.",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/LMEXlXcGIlM/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/LMEXlXcGIlM/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/LMEXlXcGIlM/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": null,
+    "maxres": null
+  }
+}

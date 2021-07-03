@@ -1,0 +1,36 @@
+{
+  "title": "The Pizza Show - Bay Area",
+  "video_published_at": "2018-02-15T18:00:02Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "TyvM2fb9kdM",
+  "published_at": "2018-02-16T02:21:57Z",
+  "description": "The Bay Area is all about great produce, and there’s no better canvas to feature it on than pizza. From SF to Napa, we’re trying some of the best pizza Nor Cal has to offer.\n\nSubscribe to Munchies here: http://bit.ly/Subscribe-to-MUNCHIES\n\nCheck out http://munchies.tv for more!\n\nFollow Munchies here:\nFacebook: http://facebook.com/munchies\nTwitter: http://twitter.com/munchies\nTumblr: http://munchies.tumblr.com\nInstagram: http://instagram.com/munchies\nPinterest: https://www.pinterest.com/munchies\nFoursquare: https://foursquare.com/munchies\nMore videos from the VICE network: https://www.fb.com/vicevideo",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/TyvM2fb9kdM/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/TyvM2fb9kdM/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/TyvM2fb9kdM/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/TyvM2fb9kdM/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/TyvM2fb9kdM/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

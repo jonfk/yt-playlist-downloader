@@ -1,0 +1,36 @@
+{
+  "title": "Late Night Kimchi and Bacon Spaetzle",
+  "video_published_at": "2020-03-30T08:02:53Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "IfhHmLX-MXI",
+  "published_at": "2020-05-06T03:04:49Z",
+  "description": "A few days ago I showed you how to make really quick spaetzle. I mentioned that I like it with kimchi and bacon, so here's how I do it with kimchi and bacon. Hold on to your butts!\n\nIf you would like to donate to our free meal fund, which helps feed folks who have been hit hardest by the coronavirus pandemic, as well as those working in the frontline, like hospital staff and first responders, please consider a monthly recurring donation of any size to my Patreon account. 100% of the proceeds go directly towards feeding those in need while also allowing me to hire back my staff to help produce these free meals.\n\nYou can also help by buying my books at bookshop.org/shop/kenjilopezalt where 100% of my sales commission goes to the free meal fund, and an additional 10% goes to independent book stores around the country.",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/IfhHmLX-MXI/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/IfhHmLX-MXI/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/IfhHmLX-MXI/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/IfhHmLX-MXI/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/IfhHmLX-MXI/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title": "Tartiflette Recipe - French Potato, Bacon, and Cheese Casserole",
+  "video_published_at": "2016-03-11T01:30:02Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "ocgn6uIzxsU",
+  "published_at": "2021-03-19T02:18:23Z",
+  "description": "Learn how to make a Tartiflette recipe! Visit http://foodwishes.blogspot.com/2016/03/tartiflette-french-potato-bacon-and.html for the ingredients, more information, and many, many more video recipes. I hope you enjoy this easy French Potato, Bacon, and Cheese Casserole recipe!",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/ocgn6uIzxsU/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/ocgn6uIzxsU/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/ocgn6uIzxsU/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/ocgn6uIzxsU/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/ocgn6uIzxsU/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

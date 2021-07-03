@@ -1,0 +1,36 @@
+{
+  "title": "How To Make Homemade Japanese Food",
+  "video_published_at": "2018-05-20T19:00:37Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "7mz9UKbGyzo",
+  "published_at": "2018-05-24T03:44:12Z",
+  "description": "Check us out on Facebook! - facebook.com/buzzfeedtasty\n\nCredits: https://www.buzzfeed.com/bfmp/videos/57173\n\n\nMUSIC\nLicensed via Audio Network",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/7mz9UKbGyzo/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/7mz9UKbGyzo/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/7mz9UKbGyzo/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/7mz9UKbGyzo/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/7mz9UKbGyzo/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

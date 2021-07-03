@@ -1,0 +1,36 @@
+{
+  "title": "How To Cook With Cast Iron",
+  "video_published_at": "2016-10-27T01:00:00Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "KLGSLCaksdY",
+  "published_at": "2017-06-15T00:48:43Z",
+  "description": "This guide will make cooking with cast iron a breeze!\n\nCheck us out on Facebook! - facebook.com/buzzfeedtasty\n\nMUSIC\nPromenade En Provence\nLicensed via Audio Network\n\nMade by BFMP www.buzzfeed.com/videoteam.",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/KLGSLCaksdY/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/KLGSLCaksdY/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/KLGSLCaksdY/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/KLGSLCaksdY/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/KLGSLCaksdY/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

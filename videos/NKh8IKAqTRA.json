@@ -1,0 +1,36 @@
+{
+  "title": "How To Make Cold Ramen",
+  "video_published_at": "2014-07-26T13:00:05Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "NKh8IKAqTRA",
+  "published_at": "2017-05-10T13:36:11Z",
+  "description": "Subscribe to Munchies here: http://bit.ly/Subscribe-to-MUNCHIES\n\nGot hunger pangs? Richie Nakano of San Francisco hotspot Hapa Ramen shows us how to make cold ramen with his fridge leftovers (in his case: kimchi, chili peppers, corn, pea shoots, baby chard, scallions, furikake, and a poached egg) and a soy-ginger vinaigrette that will fill your belly with deliciousness in no time.\n\nCheck out http://munchies.tv for more!\n\nFollow Munchies here:\nFacebook: http://facebook.com/munchies\nTwitter: http://twitter.com/munchies\nTumblr: http://munchies.tumblr.com\nInstagram: http://instagram.com/munchiesvice",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/NKh8IKAqTRA/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/NKh8IKAqTRA/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/NKh8IKAqTRA/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/NKh8IKAqTRA/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/NKh8IKAqTRA/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title": "The Tastiest Fried Chicken I've Ever Eaten",
+  "video_published_at": "2017-12-09T17:00:50Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "cPYXqBaqUgU",
+  "published_at": "2019-03-09T06:13:50Z",
+  "description": "Buy the Tasty Cookbook Today: http://bit.ly/2zVLRyd \n\nCheck us out on Facebook! - facebook.com/buzzfeedtasty\n\nCredits: https://www.buzzfeed.com/bfmp/videos/30713\n\n\nMUSIC\nLicensed via Audio Network",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/cPYXqBaqUgU/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/cPYXqBaqUgU/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/cPYXqBaqUgU/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/cPYXqBaqUgU/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/cPYXqBaqUgU/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

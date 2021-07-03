@@ -1,0 +1,36 @@
+{
+  "title": "Making Calzones with Frank Pinello from the Pizza Show",
+  "video_published_at": "2019-02-14T14:00:11Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "x-j1KDjsihI",
+  "published_at": "2019-02-16T04:50:22Z",
+  "description": "The Pizza Show's Frank Pinello stops by the MUNCHIES Test Kitchen to make calzones. He makes his own dough, mozzarella, and seasoned ricotta for this oven-baked pizza analogue—plus he even raids the pantry for a few surprise ingredients that might help expand your calzone options. \n\nCheck out the recipe: https://munchies.vice.com/en_us/article/vbwdqa/cheese-calzone-recipe\n\nSubscribe to Munchies here: http://bit.ly/Subscribe-to-MUNCHIES\nAll Munchies videos release a full week early on our site: https://video.vice.com/en_us/channel/munchies\n\nCheck out http://munchies.tv for more!\n\nFollow Munchies here:\nFacebook: http://facebook.com/munchies\nTwitter: http://twitter.com/munchies\nTumblr: http://munchies.tumblr.com\nInstagram: http://instagram.com/munchies\nPinterest: https://www.pinterest.com/munchies\nFoursquare: https://foursquare.com/munchies\nMore videos from the VICE network: https://www.fb.com/vicevideo",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/x-j1KDjsihI/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/x-j1KDjsihI/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/x-j1KDjsihI/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/x-j1KDjsihI/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/x-j1KDjsihI/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

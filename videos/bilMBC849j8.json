@@ -1,0 +1,36 @@
+{
+  "title": "Chicken Pot Pie Recipe Demonstration - Joyofbaking.com",
+  "video_published_at": "2015-02-19T17:59:09Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "bilMBC849j8",
+  "published_at": "2015-02-19T19:16:08Z",
+  "description": "Recipe here: http://www.joyofbaking.com/PiesAndTarts/ChickenPotPieRecipe.html Stephanie Jaworski of Joyofbaking.com demonstrates how to make a Chicken Pot Pie. A nice thick layer of buttery crisp pastry covering a rich and creamy filling full of bite sized pieces of roasted chicken and sautéed vegetables. That is my idea of the perfect Chicken Pot Pie.\n\nWe welcome questions on our Facebook Page: http://www.facebook.com/joyofbaking",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/bilMBC849j8/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/bilMBC849j8/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/bilMBC849j8/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/bilMBC849j8/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/bilMBC849j8/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

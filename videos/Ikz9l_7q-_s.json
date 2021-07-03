@@ -1,0 +1,36 @@
+{
+  "title": "Naan in a Pizza Oven | Kenji's Cooking Show",
+  "video_published_at": "2020-09-05T07:56:10Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "Ikz9l_7q-_s",
+  "published_at": "2020-09-09T02:47:00Z",
+  "description": "Find my naan recipe here: https://www.seriouseats.com/recipes/2011/08/grilled-naan-recipe.html\n\nYou can finish it in a pizza oven, directly on a grill, or in a home oven with a pizza stone. For the home oven, set the pizza stone on the rack closest to the broiler and preheat on the highest heat for 45 minutes. Turn the broiler on while you broil each individual pita.",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/Ikz9l_7q-_s/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/Ikz9l_7q-_s/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/Ikz9l_7q-_s/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/Ikz9l_7q-_s/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/Ikz9l_7q-_s/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}

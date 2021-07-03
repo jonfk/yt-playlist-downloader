@@ -1,0 +1,36 @@
+{
+  "title": "How to Reverse-Sear a Steak",
+  "video_published_at": "2016-03-14T13:18:00Z",
+  "start_at": null,
+  "end_at": null,
+  "video_id": "akO6D_tc0lo",
+  "published_at": "2017-03-20T01:54:34Z",
+  "description": "Reverse-sear with bonus butter baste.  This video was made in response to the Reddit AMA question: what's your favorite way to cook a steak?\n\nRecipe: https://www.bingingwithbabish.com/recipes/2017/8/22/reversesearsteak\n\nWatch in fabulous 4K for maximum steak!\n\nBinging With Babish Website: http://bit.ly/BingingBabishWebsite\nBasics With Babish Website: http://bit.ly/BasicsWithBabishWebsite\nPatreon: http://bit.ly/BingingPatreon\nInstagram: http://bit.ly/BabishInstagram\nFacebook: http://bit.ly/BabishFacebook\nTwitter: http://bit.ly/BabishTwitter",
+  "thumbnails": {
+    "default": {
+      "height": 90,
+      "url": "https://i.ytimg.com/vi/akO6D_tc0lo/default.jpg",
+      "width": 120
+    },
+    "medium": {
+      "height": 180,
+      "url": "https://i.ytimg.com/vi/akO6D_tc0lo/mqdefault.jpg",
+      "width": 320
+    },
+    "high": {
+      "height": 360,
+      "url": "https://i.ytimg.com/vi/akO6D_tc0lo/hqdefault.jpg",
+      "width": 480
+    },
+    "standard": {
+      "height": 480,
+      "url": "https://i.ytimg.com/vi/akO6D_tc0lo/sddefault.jpg",
+      "width": 640
+    },
+    "maxres": {
+      "height": 720,
+      "url": "https://i.ytimg.com/vi/akO6D_tc0lo/maxresdefault.jpg",
+      "width": 1280
+    }
+  }
+}
