@@ -1,11 +1,21 @@
 use google_youtube3::YouTube;
+use lazy_static::lazy_static;
+use regex::Regex;
 use serde::{Deserialize, Serialize};
+use std::path::Path;
 use tokio::fs;
 use tokio::io::AsyncWriteExt;
 use tracing::instrument;
 use tracing::{info, Level};
 use tracing_subscriber::FmtSubscriber;
 use yup_oauth2::{InstalledFlowAuthenticator, InstalledFlowReturnMethod};
+
+static RECIPE_PLAYLISTS_FILE: &str = "recipes_playlists.json";
+static VIDEOS_DIR: &str = "videos";
+
+lazy_static! {
+    static ref WHITESPACE_RE: Regex = Regex::new(r"\s").unwrap();
+}
 
 #[tokio::main]
 async fn main() {
@@ -49,6 +59,7 @@ async fn build_yt_api() -> YouTube {
     )
 }
 
+#[instrument(skip(hub))]
 async fn update_recipe_playlists(hub: &YouTube) {
     let playlists = get_all_playlists(&hub).await;
 
@@ -58,7 +69,7 @@ async fn update_recipe_playlists(hub: &YouTube) {
         .collect();
     recipe_playlists.sort_by(|a, b| a.id.cmp(&b.id));
 
-    let mut recipes_file = fs::File::create("recipes.json").await.unwrap();
+    let mut recipes_file = fs::File::create(RECIPE_PLAYLISTS_FILE).await.unwrap();
 
     recipes_file
         .write_all(
@@ -110,12 +121,18 @@ async fn get_all_playlists(hub: &YouTube) -> Vec<Playlist> {
 
 // https://developers.google.com/youtube/v3/docs/playlistItems/list
 #[instrument(skip(hub))]
-async fn get_playlist_items(hub: &YouTube, id: &str) {
+async fn get_playlist_items(hub: &YouTube, id: &str) -> Vec<Video> {
     let mut first = true;
     let mut next_page_token: Option<String> = None;
-    let parts = vec!["snippet".to_string(), "contentDetails".to_string(), "id".to_string()];
+    let parts = vec![
+        "snippet".to_string(),
+        "contentDetails".to_string(),
+        "id".to_string(),
+    ];
+    let mut items = Vec::new();
 
     while first || next_page_token.is_some() {
+        first = false;
         let mut call = hub.playlist_items().list(&parts).max_results(50).add_id(id);
 
         if let Some(page_token) = &next_page_token {
@@ -124,6 +141,43 @@ async fn get_playlist_items(hub: &YouTube, id: &str) {
 
         let (_, items_resp) = call.doit().await.unwrap();
         next_page_token = items_resp.next_page_token.clone();
+        items.extend(items_resp.items.unwrap().iter().map(|item| {
+            let content_details = item.content_details.clone().unwrap();
+            let snippet = item.snippet.clone().unwrap();
+            let thumbnails = snippet.thumbnails.unwrap();
+            Video {
+                id: item.id.clone().unwrap(),
+                title: snippet.title.unwrap(),
+                video_published_at: content_details.video_published_at.unwrap(),
+                start_at: content_details.start_at.unwrap(),
+                end_at: content_details.end_at.unwrap(),
+                video_id: content_details.video_id.unwrap(),
+                note: content_details.note.unwrap(),
+                published_at: snippet.published_at.unwrap(),
+                description: snippet.description.unwrap(),
+                thumbnails: Thumbnails::from(&thumbnails),
+            }
+        }))
+    }
+    items
+}
+
+#[instrument(skip(hub))]
+async fn update_playlist_items(hub: &YouTube, id: &str) {
+    let videos = get_playlist_items(hub, id).await;
+    let dir_path = Path::new(VIDEOS_DIR);
+    fs::create_dir_all(dir_path).await.unwrap();
+
+    for video in videos {
+        let mut video_file_path = dir_path.to_owned();
+        video_file_path.push(format!(
+            "{}_{}.json",
+            video.id,
+            WHITESPACE_RE.replace_all(&video.title, "")
+        ));
+        let mut video_file = fs::File::create(&video_file_path).await.unwrap();
+
+        video_file.write_all(serde_json::to_string_pretty(&video).unwrap().as_bytes()).await.unwrap();
     }
 }
 
@@ -136,6 +190,7 @@ pub struct Playlist {
     etag: String,
 }
 
+#[derive(Debug, Clone, Serialize, Deserialize, Eq, Ord, PartialEq, PartialOrd)]
 pub struct Video {
     id: String,
     title: String,
@@ -146,7 +201,43 @@ pub struct Video {
     note: String,
     published_at: String,
     description: String,
-
+    thumbnails: Thumbnails,
 }
 
-pub struct VideoThumbnails {}
+#[derive(Debug, Clone, Serialize, Deserialize, Eq, Ord, PartialEq, PartialOrd)]
+pub struct Thumbnails {
+    default: Thumbnail,
+    high: Thumbnail,
+    maxres: Thumbnail,
+    medium: Thumbnail,
+    standard: Thumbnail,
+}
+
+impl From<&google_youtube3::api::ThumbnailDetails> for Thumbnails {
+    fn from(thumnails: &google_youtube3::api::ThumbnailDetails) -> Self {
+        Thumbnails {
+            default: Thumbnail::from(&thumnails.default.clone().unwrap()),
+            high: Thumbnail::from(&thumnails.high.clone().unwrap()),
+            maxres: Thumbnail::from(&thumnails.maxres.clone().unwrap()),
+            medium: Thumbnail::from(&thumnails.medium.clone().unwrap()),
+            standard: Thumbnail::from(&thumnails.standard.clone().unwrap()),
+        }
+    }
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, Eq, Ord, PartialEq, PartialOrd)]
+pub struct Thumbnail {
+    height: u32,
+    url: String,
+    width: u32,
+}
+
+impl From<&google_youtube3::api::Thumbnail> for Thumbnail {
+    fn from(thumnail: &google_youtube3::api::Thumbnail) -> Self {
+        Thumbnail {
+            height: thumnail.height.unwrap(),
+            url: thumnail.url.clone().unwrap(),
+            width: thumnail.width.unwrap(),
+        }
+    }
+}
