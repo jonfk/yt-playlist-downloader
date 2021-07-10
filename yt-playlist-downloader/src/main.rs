@@ -3,17 +3,13 @@ use google_youtube3::YouTube;
 use lazy_static::lazy_static;
 use regex::Regex;
 use serde::{Deserialize, Serialize};
-use std::path::Path;
-use tokio::fs;
-use tokio::io::{AsyncReadExt, AsyncWriteExt};
-use tracing::instrument;
 use tracing::{info, Level};
 use tracing_subscriber::{EnvFilter, FmtSubscriber};
 use yup_oauth2::{InstalledFlowAuthenticator, InstalledFlowReturnMethod};
 
 static RECIPE_PLAYLISTS_FILE: &str = "recipes_playlists.json";
 static VIDEOS_DIR: &str = "videos";
-static THUMBNAILS_DIR: &str = "videos/thumbnails";
+static THUMBNAILS_DIR: &str = "video_thumbnails";
 
 lazy_static! {
     static ref WHITESPACE_RE: Regex = Regex::new(r"\s").unwrap();
@@ -21,6 +17,7 @@ lazy_static! {
 
 mod playlist;
 mod video;
+mod channel;
 
 #[derive(Clap)]
 #[clap(version = "1.0", author = "Jonathan Fok kan <jfokkan@gmail.com>")]
@@ -30,6 +27,9 @@ struct CliOpts {
 
     #[clap(long)]
     update_videos: bool,
+
+    #[clap(long)]
+    update_channels: bool,
 
     #[clap(long)]
     check_video: bool,
@@ -60,15 +60,17 @@ async fn main() {
     };
 
     let videos = if cli_opts.all || cli_opts.update_videos {
-    video::update_all_playlists_items(&hub, playlists.into_iter().map(|p| p.id).collect()).await
+        video::update_all_playlists_items(&hub, playlists.into_iter().map(|p| p.id).collect()).await
     } else {
         video::read_all_videos().await
     };
 
+    if cli_opts.all || cli_opts.update_channels {
+
+    }
+
     if cli_opts.all || cli_opts.check_video {
-        println!("TODO check videos");
-    } else {
-        // do nothing
+        info!("TODO check videos");
     }
 
     info!("Update Completed");
@@ -97,7 +99,6 @@ async fn build_yt_api() -> YouTube {
         auth,
     )
 }
-
 
 #[derive(Debug, Clone, Serialize, Deserialize, Eq, Ord, PartialEq, PartialOrd)]
 pub struct Playlist {
@@ -135,8 +136,8 @@ impl From<&google_youtube3::api::ThumbnailDetails> for Thumbnails {
             default: Thumbnail::from(&thumnails.default.clone().unwrap()),
             medium: Thumbnail::from(&thumnails.medium.clone().unwrap()),
             high: Thumbnail::from(&thumnails.high.clone().unwrap()),
-            standard: thumnails.standard.clone().map(|t|Thumbnail::from(&t)),
-            maxres: thumnails.maxres.clone().map(|t|Thumbnail::from(&t)),
+            standard: thumnails.standard.clone().map(|t| Thumbnail::from(&t)),
+            maxres: thumnails.maxres.clone().map(|t| Thumbnail::from(&t)),
         }
     }
 }
